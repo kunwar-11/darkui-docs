@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://darkify.netlify.app/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Dark UI | Document</title>
+</head>
+<body>
+    <div class="wrapper bg-dark">
+        <header class="header bg-dark">
+            <a href="index.html"><h1 class="text-headings head-name">Dark UI</h1></a>
+            <small class="text__muted">v 0.0</small>
+        </header>
+        <div class="content">
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                        <a class="text-light" href = "#1">AVATARS</a>
+                        <a class="text-light" href = "#2">ALERTS</a>
+                        <a class="text-light" href = "#3">BADGES</a>
+                        <a class="text-light" href = "#4">BUTTONS</a>
+                        <a class="text-light" href = "#5">LINKS</a>
+                        <a class="text-light" href = "#6">ICONS</a>
+                        <a class="text-light" href = "#7">FLOATING ACTION BUTTON</a>
+                        <a class="text-light" href = "#8">CARDS</a>
+                        <a class="text-light" href = "#9">IMAGES</a>
+                        <a class="text-light" href = "#10">INPUT</a>
+                        <a class="text-light" href = "#11">LISTS</a>
+                        <a class="text-light" href = "#12">MODAL</a>
+                        <a class="text-light" href = "#13">GRID LAYOUT</a>
+                        <a class="text-light" href = "#14">TEXT UTILITIES</a>
+                        <a class="text-light" href = "#15">SNACKBAR</a>
+                </div>
+            </div>
+            <div class="components">
+                <div class="components-example" id = "">
+                    <h1 class="text-headings">Installation</h1>
+                    <h2 class="text-warning">CSS</h2>
+                    <p class="text-light">
+                        Copy-paste the stylesheet link into head section of your web page before all other stylesheets to load our CSS & FontAwsome icons, in the same order
+                    </p> 
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fdarkify.netlify.app%252Fstyles.css%2522%253E%250A%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcdnjs.cloudflare.com%252Fajax%252Flibs%252Ffont-awesome%252F5.15.3%252Fcss%252Fall.min.css%2522%2520integrity%253D%2522sha512-iBBXm8fW90%252BnuLcSKlbmrPcLa0OT92xO1BIsZ%252BywDWZCvqsWgccV3gFoRBv0z%252B8dLJgyAHIhR35VZc2oM%252FgI1w%253D%253D%2522%2520crossorigin%253D%2522anonymous%2522%2520%252F%253E"
+  style="height: 278px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+<h2 class="text-warning">JS</h2>
+<p class="text-light">
+   paste it at end of your body to add some javascript functionality
+</p> 
+<iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cscript%2520src%253D%2522https%253A%252F%252Fdarkify.netlify.app%252Fscript.js%2522%253E%253C%252Fscript%253E"
+  style="height: 205px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "1">
+                    <h1 class="text-headings">AVATAR</h1>
+                    <img src="https://pbs.twimg.com/profile_images/1236563952605130752/d9EYzZpu.jpg" alt="" class="avatar">
+                    <img src="https://pbs.twimg.com/profile_images/1236563952605130752/d9EYzZpu.jpg" alt="" class="avatar avatar-2x">
+                    <img src="https://pbs.twimg.com/profile_images/1236563952605130752/d9EYzZpu.jpg" alt="" class="avatar avatar-3x">
+                    <h2 class="text-warning">CODE<h2> 
+                        <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F1236563952605130752%252Fd9EYzZpu.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2522%253E%250A%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F1236563952605130752%252Fd9EYzZpu.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-2x%2522%253E%250A%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F1236563952605130752%252Fd9EYzZpu.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-3x%2522%253E"
+  style="height: 297px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "2">
+                    <h1 class="text-headings">ALERTS</h1>
+                    <div class="alert alert-primary" role="alert">
+                        This is a PRIMARY Alert
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        This is a SUCCESS Alert
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        This is a DANGER Alert
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        This is a WARNING Alert
+                    </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%2520role%253D%2522alert%2522%253EThis%2520is%2520a%2520PRIMARY%2520Alert%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%2520role%253D%2522alert%2522%253EThis%2520is%2520a%2520SUCCESS%2520Alert%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%2520role%253D%2522alert%2522%253EThis%2520is%2520a%2520DANGER%2520Alert%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%2520role%253D%2522alert%2522%253EThis%2520is%2520a%2520WARNING%2520Alert%253C%252Fdiv%253E"
+  style="height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "3">
+                    <h1 class="text-headings">BADGES</h1>
+                    <h3 class="text-warning">Badges</h3>
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-primary%2522%253EPrimary%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-success%2522%253ESuccess%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-warning%2522%253EWarning%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-danger%2522%253EDanger%253C%252Fspan%253E"
+  style="height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Badges Pills</h3>
+                    <span class="badge-pills badge-primary">Primary</span>
+                    <span class="badge-pills badge-success">Success</span>
+                    <span class="badge-pills badge-warning">Warning</span>
+                    <span class="badge-pills badge-danger">Danger</span>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cspan%2520class%253D%2522badge-pills%2520badge-primary%2522%253EPrimary%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge-pills%2520badge-success%2522%253ESuccess%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge-pills%2520badge-warning%2522%253EWarning%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge-pills%2520badge-danger%2522%253EDanger%253C%252Fspan%253E"
+  style="height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Badge on Avatar</h3>
+                    <div class="badge__on__avatar">
+                        <img src="https://pbs.twimg.com/profile_images/1236563952605130752/d9EYzZpu.jpg" alt="" class="avatar">
+                        <div class="badge-success badge-round"></div>
+                    </div>
+                   <div class="badge__on__avatar">
+                       <img src="https://pbs.twimg.com/profile_images/1236563952605130752/d9EYzZpu.jpg" alt="" class="avatar avatar-2x">
+                       <div class="badge-success badge-round"></div>
+                   </div>
+                   <div class="badge__on__avatar">
+                    <img src="https://pbs.twimg.com/profile_images/1236563952605130752/d9EYzZpu.jpg" alt="" class="avatar avatar-3x">
+                    <div class="badge-success badge-round badge-round-2x"></div>
+                </div>
+                <div class="badge__on__avatar">
+                    <img src="https://pbs.twimg.com/profile_images/1236563952605130752/d9EYzZpu.jpg" alt="" class="avatar">
+                    <div class="badge-danger badge-round"></div>
+                </div>
+                <div class="badge__on__avatar">
+                   <img src="https://pbs.twimg.com/profile_images/1236563952605130752/d9EYzZpu.jpg" alt="" class="avatar avatar-2x">
+                   <div class="badge-danger badge-round"></div>
+                </div>
+                <div class="badge__on__avatar">
+                <img src="https://pbs.twimg.com/profile_images/1236563952605130752/d9EYzZpu.jpg" alt="" class="avatar avatar-3x">
+                <div class="badge-danger badge-round badge-round-2x"></div>
+                </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cdiv%2520class%253D%2522badge__on__avatar%2522%253E%250A%2520%2520%2520%2509%2509%253Cimg%2520src%253D%2522https%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F1236563952605130752%252Fd9EYzZpu.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2509%2509%253Cdiv%2520class%253D%2522badge-success%2520badge-round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge__on__avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F1236563952605130752%252Fd9EYzZpu.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-2x%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-success%2520badge-round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522badge__on__avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F1236563952605130752%252Fd9EYzZpu.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-3x%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-success%2520badge-round%2520badge-round-2x%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge__on__avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F1236563952605130752%252Fd9EYzZpu.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-danger%2520badge-round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge__on__avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F1236563952605130752%252Fd9EYzZpu.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-2x%2522%253E%250A%2520%2520%2520%2520%2520%2509%2509%2520%253Cdiv%2520class%253D%2522badge-danger%2520badge-round%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge__on__avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpbs.twimg.com%252Fprofile_images%252F1236563952605130752%252Fd9EYzZpu.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-3x%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-danger%2520badge-round%2520badge-round-2x%2522%253E%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E"
+  style="height: 738px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+<h3 class="text-warning">Badge on Icons</h3>
+<div class="badge-on-icon">
+    <i class="fas fa-home fa-2x text-primary icon-only"></i>
+    <div class="badge-danger badge-pills badge-notification">9+</div>
+</div>
+<iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-on-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-home%2520fa-2x%2520text-primary%2520icon-only%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-danger%2520badge-pills%2520badge-notification%2522%253E9%252B%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+                
+                <div class="divider"></div>
+                <div class="components-example" id = "4">
+                    <h1 class="text-headings">BUTTON</h1>
+                    <h3 class="text-warning">Primary Buttons</h3>
+                    <button class="btn btn-primary">
+                        Primary
+                    </button>
+                    <button class="btn btn-primary-success">
+                        Success
+                    </button>
+                    <button class="btn btn-primary-warning">
+                        Warning
+                    </button>
+                    <button class="btn btn-primary-danger">
+                        Danger
+                    </button>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary-danger%2522%253EDanger%253C%252Fbutton%253E"
+  style="height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Secondary Buttons</h3>
+                    <button class="btn btn-secondary">
+                        Primary
+                    </button>
+                    <button class="btn btn-secondary-success">
+                        Success
+                    </button>
+                    <button class="btn btn-secondary-warning">
+                        Warning
+                    </button>
+                    <button class="btn btn-secondary-danger">
+                        Danger
+                    </button>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-danger%2522%253EDanger%253C%252Fbutton%253E"
+  style="height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "5">
+                    <h1 class="text-headings">LINKS</h1>
+                    <h3 class="text-warning">Primary Link</h3>
+                    <a class="link link-primary" href="">Primary Link</a>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Ca%2520class%253D%2522link%2520link-primary%2522%2520href%253D%2522%2522%253EPrimary%2520Link%253C%252Fa%253E"
+  style="height: 205px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Secondary Link</h3>
+                    <a href="" class="link link-secondary">
+                        Secondary Link
+                    </a>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Ca%2520class%253D%2522link%2520link-secondary%2522%2520href%253D%2522%2522%253ESecondary%2520Link%253C%252Fa%253E"
+  style="height: 205px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "6">
+                    <h1 class="text-headings">ICONS</h1>
+                    <h3 class="text-warning">Icon Button</h3>
+                    <button class="icon btn btn-primary">
+                        <i class="fas fa-home"></i>
+                        <div class="icon-text">
+                            Home
+                        </div>
+                    </button>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522icon%2520btn%2520btn-primary%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-text%2522%253EHome%253C%252Fdiv%253E%250A%253C%252Fbutton%253E"
+  style="height: 260px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+<h3 class="text-warning">Only Icon Button</h3>
+<i class="fas fa-home fa-2x text-primary icon-only"></i>
+<h2 class="text-warning">CODE</h2>
+<iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ci%2520class%253D%2522fas%2520fa-home%2520fa-2x%2520text-primary%2520icon-only%2522%253E%253C%252Fi%253E"
+  style="height: 205px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "7">
+                    <h1 class="text-headings">FLOATING ACTION BUTTON</h1>
+                    <button class="floating-action">
+                        <i class="fas fa-plus floating-icon"></i>
+                    </button>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522floating-action%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2520floating-icon%2522%253E%253C%252Fi%253E%250A%2520%253C%252Fbutton%253E"
+  style="height: 242px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "8">
+                    <h1 class="text-headings">CARDS</h1>
+                    <h3 class="text-warning">Simple Card</h3>
+                    <div class="card">
+                        <img class="card__img" src="https://via.placeholder.com/150" alt="img">
+                        <div class="card__body__container">
+                            <h3 class="card__header">Card Header</h3>
+                            <p class="card__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi repellendus sed molestiae delectus? Ut ipsum, cum pariatur soluta, ipsa minus esse aut magni quas dolorum necessitatibus vel quod distinctio temporibus.</p>
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522card__img%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F150%2522%2520alt%253D%2522img%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__body__container%2522%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card__header%2522%253ECard%2520Header%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card__body%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Sequi%2520repellendus%2520sed%2520molestiae%2520delectus%253F%2520Ut%2520ipsum%252C%2520cum%2520pariatur%2520soluta%252C%2520ipsa%2520minus%2520esse%2520aut%2520magni%2520quas%2520dolorum%2520necessitatibus%2520vel%2520quod%2520distinctio%2520temporibus.%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv"
+  style="height: 352px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Card with Badge</h3>
+                    <div class="card card__with__badge">
+                        <img class="card__img" src="https://via.placeholder.com/150" alt="img">
+                        <div class="card__body__container">
+                            <h3 class="card__header">Card Header</h3>
+                            <p class="card__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi repellendus sed molestiae delectus? Ut ipsum, cum pariatur soluta, ipsa minus esse aut magni quas dolorum necessitatibus vel quod distinctio temporibus.</p>
+                        </div>
+                        <span class="badge badge-danger card__badge">HOT</span>
+                    </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card__with__badge%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522card__img%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F150%2522%2520alt%253D%2522img%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522card__body__container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card__header%2522%253ECard%2520Header%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card__body%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Sequi%2520repellendus%2520sed%2520molestiae%2520delectus%253F%2520Ut%2520ipsum%252C%2520cum%2520pariatur%2520soluta%252C%2520ipsa%2520minus%2520esse%2520aut%2520magni%2520quas%2520dolorum%2520necessitatibus%2520vel%2520quod%2520distinctio%2520temporibus.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-danger%2520card__badge%2522%253EHOT%253C%252Fspan%253E%250A%2520%253C%252Fdiv%253E"
+  style="height: 370px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Card with Dismiss</h3>
+                    <div class="card card__with__dismiss">
+                        <img class="card__img" src="https://via.placeholder.com/150" alt="img">
+                        <div class="card__body__container">
+                            <h3 class="card__header">Card Header</h3>
+                            <p class="card__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi repellendus sed molestiae delectus? Ut ipsum, cum pariatur soluta, ipsa minus esse aut magni quas dolorum necessitatibus vel quod distinctio temporibus.</p>
+                        </div>
+                        <div class="card__dismiss">
+                            <i class="fas fa-times"></i>
+                        </div> 
+                        </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card__with__dismiss%2522%253E%250A%2509%2520%253Cimg%2520class%253D%2522card__img%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F150%2522%2520alt%253D%2522img%2522%253E%250A%2520%2520%2520%2509%2520%253Cdiv%2520class%253D%2522card__body__container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card__header%2522%253ECard%2520Header%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card__body%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Sequi%2520repellendus%2520sed%2520molestiae%2520delectus%253F%2520Ut%2520ipsum%252C%2520cum%2520pariatur%2520soluta%252C%2520ipsa%2520minus%2520esse%2520aut%2520magni%2520quas%2520dolorum%2520necessitatibus%2520vel%2520quod%2520distinctio%2520temporibus.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__dismiss%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%2520%250A%2520%253C%252Fdiv%253E"
+  style="height: 370px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Text Cards</h3>
+                    <div class="card card__text">
+                        <div class="card__body__container">
+                            <h3 class="card__header">Card Header</h3>
+                            <p class="card__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi repellendus sed molestiae delectus? Ut ipsum, cum pariatur soluta, ipsa minus esse aut magni quas dolorum necessitatibus vel quod distinctio temporibus.</p>
+                        </div>
+                </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card__text%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__body__container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Ch3%2520class%253D%2522card__header%2522%253ECard%2520Header%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card__body%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Sequi%2520repellendus%2520sed%2520molestiae%2520delectus%253F%2520Ut%2520ipsum%252C%2520cum%2520pariatur%2520soluta%252C%2520ipsa%2520minus%2520esse%2520aut%2520magni%2520quas%2520dolorum%2520necessitatibus%2520vel%2520quod%2520distinctio%2520temporibus.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="height: 334px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Horizontal Cards</h3>
+                    <div class="card__horizontal">
+                        <img class="card__horizontal__img" src="https://via.placeholder.com/150" alt="img">
+                        <div class="card__body__container">
+                            <h3 class="card__horizontal__header">Card Header</h3>
+                            <p class="card__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi repellendus sed molestiae delectus? Ut ipsum, cum pariatur soluta, ipsa minus esse aut magni quas dolorum necessitatibus vel quod distinctio temporibus.</p>
+                    </div>
+                    </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card__horizontal%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card__horizontal__img%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F150%2522%2520alt%253D%2522img%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__horizontal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card__horizontal__header%2522%253ECard%2520Header%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card__horizontal__body%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Sequi%2520repellendus%2520sed%2520molestiae%2520delectus%253F%2520Ut%2520ipsum%252C%2520cum%2520pariatur%2520soluta%252C%2520ipsa%2520minus%2520esse%2520aut%2520magni%2520quas%2520dolorum%2520necessitatibus%2520vel%2520quod%2520distinctio%2520temporibus.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+  style="height: 352px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Card with Shadow</h3>
+                    <div class="card card__shadow">
+                        <img class="card__img" src="https://via.placeholder.com/150" alt="img">
+                        <div class="card__body__container">
+                            <h3 class="card__header">Card Header</h3>
+                            <p class="card__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi repellendus sed molestiae delectus? Ut ipsum, cum pariatur soluta, ipsa minus esse aut magni quas dolorum necessitatibus vel quod distinctio temporibus.</p>
+                        </div>
+                    </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card%2520card__shadow%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card__img%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F150%2522%2520alt%253D%2522img%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__body__container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card__header%2522%253ECard%2520Header%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card__body%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Sequi%2520repellendus%2520sed%2520molestiae%2520delectus%253F%2520Ut%2520ipsum%252C%2520cum%2520pariatur%2520soluta%252C%2520ipsa%2520minus%2520esse%2520aut%2520magni%2520quas%2520dolorum%2520necessitatibus%2520vel%2520quod%2520distinctio%2520temporibus.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+  style="height: 352px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "9">
+                    <h1 class="text-headings">IMAGES</h1>
+                    <h3 class="text-warning">Responsive Image</h3>
+                    <img class="image__responsive" src="joshua-reddekopp-SyYmXSDnJ54-unsplash (1).jpg" alt="img">
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520class%253D%2522image__responsive%2522%2520src%253D%2522joshua-reddekopp-SyYmXSDnJ54-unsplash%2520%281%29.jpg%2522%2520alt%253D%2522img%2522%253E"
+  style="height: 205px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Round Image</h3>
+                    <img 
+                    class="image__responsive rounded__image"
+                    src="joshua-reddekopp-SyYmXSDnJ54-unsplash (1).jpg" alt="">
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520class%253D%2522image__responsive%2520rounded__image%2522%2520src%253D%2522joshua-reddekopp-SyYmXSDnJ54-unsplash%2520%281%29.jpg%2522%2520alt%253D%2522%2522%253E"
+  style="height: 223px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "10">
+                    <h1 class="text-headings">INPUTS</h1>
+                    <h3 class="text-warning">STANDARD INPUT</h3>
+                    <div class="input">
+                        <input type="text" class="inputText" placeholder="input">
+                        <small class="no-error">no error</small>
+                    </div>
+                    <div class="input">
+                    <textarea  class="input-textArea" placeholder="enter your text"></textarea>
+                    <small class="no-error">no error</small>
+                    </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522inputText%2522%2520placeholder%253D%2522input%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522no-error%2522%253Eno%2520error%253C%252Fsmall%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%253Ctextarea%2520%2520class%253D%2522input-textArea%2522%2520placeholder%253D%2522enter%2520your%2520text%2522%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522no-error%2522%253Eno%2520error%253C%252Fsmall%253E%250A%253C%252Fdiv%253E"
+  style="height: 334px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                <h3 class="text-warning">ERROR INPUT</h3>
+                <div class="input-error">
+                    <input type="text" class="inputText error">
+                    <small class="error__message">there is an error</small>
+                </div>
+                <div class="input-error">
+            <textarea  class="input-textArea error" ></textarea>
+            <small class="error__message">there is an error</small>
+            </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522inputText%2520error%2522%2520placeholder%253D%2522input%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522error__message%2522%253Eno%2520error%253C%252Fsmall%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input%2522%253E%250A%2520%2520%2520%2520%253Ctextarea%2520%2520class%253D%2522input-textArea%2520error%2522%2520placeholder%253D%2522enter%2520your%2520text%2522%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522error__message%2522%253Eno%2520error%253C%252Fsmall%253E%250A%253C%252Fdiv%253E"
+  style="height: 334px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "11">
+                    <h1 class="text-headings">LISTS</h1>
+                    <h3 class="text-warning">Stacked List</h3>
+                    <ul class="list__stack">
+                        <li class="list__stack__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus, harum pariatur temporibus fuga repudiandae perspiciatis nobis suscipit. Eum non esse voluptatem excepturi dolore cupiditate et delectus enim beatae facilis.</li>
+                        <li class="list__stack__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, nisi? Cumque aliquid nobis ea eum. Perferendis labore, voluptate vel laudantium quas odio, dolores neque quisquam ducimus officiis est, fuga ea!</li>
+                        <li class="list__stack__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus qui dolore esse itaque excepturi minima debitis iusto reprehenderit ipsam recusandae dolores inventore repellendus, voluptate iure nesciunt fugiat. Cupiditate, sed autem.</li>
+                        <li class="list__stack__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum quidem quae, eveniet eius corrupti culpa iure et consequatur esse vitae neque, velit voluptatibus quo quia a reiciendis, beatae error. Apple</li>
+                    </ul>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list__stack%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list__stack__item%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Error%2520accusamus%252C%2520harum%2520pariatur%2520temporibus%2520fuga%2520repudiandae%2520perspiciatis%2520nobis%2520suscipit.%2520Eum%2520non%2520esse%2520voluptatem%2520excepturi%2520dolore%2520cupiditate%2520et%2520delectus%2520enim%2520beatae%2520facilis.%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list__stack__item%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Quae%252C%2520nisi%253F%2520Cumque%2520aliquid%2520nobis%2520ea%2520eum.%2520Perferendis%2520labore%252C%2520voluptate%2520vel%2520laudantium%2520quas%2520odio%252C%2520dolores%2520neque%2520quisquam%2520ducimus%2520officiis%2520est%252C%2520fuga%2520ea%21%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list__stack__item%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Minus%2520qui%2520dolore%2520esse%2520itaque%2520excepturi%2520minima%2520debitis%2520iusto%2520reprehenderit%2520ipsam%2520recusandae%2520dolores%2520inventore%2520repellendus%252C%2520voluptate%2520iure%2520nesciunt%2520fugiat.%2520Cupiditate%252C%2520sed%2520autem.%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list__stack__item%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%2520Dignissimos%2520illum%2520quidem%2520quae%252C%2520eveniet%2520eius%2520corrupti%2520culpa%2520iure%2520et%2520consequatur%2520esse%2520vitae%2520neque%252C%2520velit%2520voluptatibus%2520quo%2520quia%2520a%2520reiciendis%252C%2520beatae%2520error.%2520Apple%253C%252Fli%253E%250A%253C%252Ful%253E"
+  style="height: 444px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    <h3 class="text-warning">Spaced List</h3>
+                    <ul class="list__spaced">
+                        <li class="list__spaced__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus, harum pariatur temporibus fuga repudiandae perspiciatis nobis suscipit. Eum non esse voluptatem excepturi dolore cupiditate et delectus enim beatae facilis</li>
+                        <li class="list__spaced__item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, nisi? Cumque aliquid nobis ea eum. Perferendis labore, voluptate vel laudantium quas odio, dolores neque quisquam ducimus officiis est, fuga ea!</li>
+                        <li class="list__spaced__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus qui dolore esse itaque excepturi minima debitis iusto reprehenderit ipsam recusandae dolores inventore repellendus, voluptate iure nesciunt fugiat. Cupiditate, sed autem.</li>
+                        <li class="list__spaced__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum quidem quae, eveniet eius corrupti culpa iure et consequatur esse vitae neque, velit voluptatibus quo quia a reiciendis, beatae error. Apple</li>
+                </ul>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list__spaced%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list__spaced__item%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Error%2520accusamus%252C%2520harum%2520pariatur%2520temporibus%2520fuga%2520repudiandae%2520perspiciatis%2520nobis%2520suscipit.%2520Eum%2520non%2520esse%2520voluptatem%2520excepturi%2520dolore%2520cupiditate%2520et%2520delectus%2520enim%2520beatae%2520facilis.%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list__spaced__item%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%2520Quae%252C%2520nisi%253F%2520Cumque%2520aliquid%2520nobis%2520ea%2520eum.%2520Perferendis%2520labore%252C%2520voluptate%2520vel%2520laudantium%2520quas%2520odio%252C%2520dolores%2520neque%2520quisquam%2520ducimus%2520officiis%2520est%252C%2520fuga%2520ea%21%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list__spaced__item%2522%253ELorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Minus%2520qui%2520dolore%2520esse%2520itaque%2520excepturi%2520minima%2520debitis%2520iusto%2520reprehenderit%2520ipsam%2520recusandae%2520dolores%2520inventore%2520repellendus%252C%2520voluptate%2520iure%2520nesciunt%2520fugiat.%2520Cupiditate%252C%2520sed%2520autem.%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list__spaced__item%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%2520Dignissimos%2520illum%2520quidem%2520quae%252C%2520eveniet%2520eius%2520corrupti%2520culpa%2520iure%2520et%2520consequatur%2520esse%2520vitae%2520neque%252C%2520velit%2520voluptatibus%2520quo%2520quia%2520a%2520reiciendis%252C%2520beatae%2520error.%2520Apple%253C%252Fli%253E%250A%253C%252Ful%253E"
+  style="height: 444px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "12">
+                    <h1 class="text-headings">MODAL</h1>
+                    <div class="modal">
+                        <div class="modal__header">
+                            <h3>modal header</h3>
+                            <div class="modal__close">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="modal__body">
+                            <p class="modal__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium placeat quos.
+                            </p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="modal__footer">
+                            <button class="btn btn-primary-danger" id="btn-close-modal">Close</button><button class="btn btn-primary">save changes</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="open-modal">Open Modal</button>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal__header%2522%253E%250A%2509%2509%253Ch3%253Emodal%2520header%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal__close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal__body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522modal__text%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%2520Praesentium%2520placeat%2520quos.%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal__footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-danger%2522%2520id%253D%2522btn-close-modal%2522%253EClose%253C%252Fbutton%253E%250A%2509%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253Esave%2520changes%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="height: 518px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                    
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "13">
+                    <h1 class="text-headings">GRID</h1>
+                    <div class="grid__row__4">
+                        <div class="grid__col__4">1 of 3</div>
+                        <div class="grid__col__4">2 of 3</div>
+                        <div class="grid__col__4">3 of 3</div>
+                    </div>
+                    <div class="grid__row__6">
+                        <div class="grid__col__6">1 of 2</div>
+                        <div class="grid__col__6">2 of 2</div>
+                    </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+  src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid__row__4%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522grid__col__4%2522%253E1%2520of%25203%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522grid__col__4%2522%253E2%2520of%25203%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522grid__col__4%2522%253E3%2520of%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522grid__row__6%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid__col__6%2522%253E1%2520of%25202%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid__col__6%2522%253E2%2520of%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="height: 352px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "14">
+                    <h1 class="text-headings">TEXT UTILITIES</h1>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iure magnam facilis quae numquam, mollitia voluptatum dolor nihil eos commodi quod voluptates facere quam, provident eveniet quisquam culpa aspernatur delectus.</p>
+                    <h3 class="text__muted">
+                        this is a muted text
+                    </h3>
+                    <h3 class="text__center">this is cenntered text</h3>
+                    <small class="text__small">
+                        this is small text
+                    </small>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+                    src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E%250A%253Cp%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Doloremque%2520iure%2520magnam%2520facilis%2520quae%2520numquam%252C%2520mollitia%2520voluptatum%2520dolor%2520nihil%2520eos%2520commodi%2520quod%2520voluptates%2520facere%2520quam%252C%2520provident%2520eveniet%2520quisquam%2520culpa%2520aspernatur%2520delectus.%253C%252Fp%253E%250A%253Ch3%2520class%253D%2522text__muted%2522%253Ethis%2520is%2520a%2520muted%2520text%253C%252Fh3%253E%250A%253Ch3%2520class%253D%2522text__center%2522%253Ethis%2520is%2520cenntered%2520text%253C%252Fh3%253E%250A%253Csmall%2520class%253D%2522text__small%2522%253Ethis%2520is%2520small%2520text%253C%252Fsmall%253E"
+                    style="height: 407px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </div>
+                <div class="divider"></div>
+                <div class="components-example" id = "15">
+                    <h1 class="text-headings">SNACKBAR</h1>
+                    <button class="btn btn-primary" id="open-snackbar-success">Open Snackbar</button>
+                    <button class="btn btn-secondary" id="open-snackbar-secondary">Open secondary Snackbar</button>
+                    <div class="snackbar snackbar__primary">
+                        <p>this is a snackbar</p>
+                        <div class="close__snackbar close__snackbar__primary"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="snackbar snackbar__secondary">
+                        <p>this is a snackbar</p>
+                        <div class="close__snackbar close__snackbar__secondary"><i class="fas fa-times"></i></div>
+                    </div>
+                    <h2 class="text-warning">CODE</h2>
+                    <iframe class="frame"
+                    src="https://carbon.now.sh/embed?bg=rgba%2814%2C57%2C98%2C1%29&t=one-dark&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2520snackbar__primary%2522%253E%250A%2509%253Cp%253Ethis%2520is%2520a%2520snackbar%253C%252Fp%253E%250A%2509%253Cdiv%2520class%253D%2522close__snackbar%2520close__snackbar__primary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522snackbar%2520snackbar__secondary%2522%253E%250A%2509%253Cp%253Ethis%2520is%2520a%2520snackbar%253C%252Fp%253E%250A%2509%253Cdiv%2520class%253D%2522close__snackbar%2520close__snackbar__secondary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="height: 334px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://darkify.netlify.app/script.js"></script>
+</body>
+</html>
